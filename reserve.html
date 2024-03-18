@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>MakerKingdom</title>
+    <script src="https://kit.fontawesome.com/c9f1cdcebd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="home-page">
+        <h1></h1>
+    </div>
+    <div class="navbar">
+            <a href="/"><img class="logo" src="logo.png"></a>
+           <div class="nav-elements">
+            <a href="items.html"><li>Items</li></a>
+            <a href="reserve.html"><li>Reserve</li></a>
+            <a href="calendar.html"><li>Events</li></a>
+            <a href="member.html"><li>Membership</li></a>
+            <a href="about.html"><li>About</li></a>
+            <button class="sign-button"><a href="signup.html">Sign Up</a></button>
+            <button class="sign-button"><a href="signin.html">Sign In</a></button>
+            <div class="space"></div>
+           </div>
+    </div>
+<div class="reserve">
+<form method="post" action="/submit">
+       <div class="wrapper">
+           <h1 class="wrapper-title">Reservation</h1>
+           <div class="input-box">
+               <label for="reservation_name">Reservation Name (Full Name):</label>
+               <div class="input-wrapper">
+                    <input type="text" name="reservation_name" id="reservation_name" required placeholder="Name">
+
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M192 128c0-17.7 14.3-32 32-32s32 14.3 32 32v7.8c0 27.7-2.4 55.3-7.1 82.5l-84.4 25.3c-40.6 12.2-68.4 49.6-68.4 92v71.9c0 40 32.5 72.5 72.5 72.5c26 0 50-13.9 62.9-36.5l13.9-24.3c26.8-47 46.5-97.7 58.4-150.5l94.4-28.3-12.5 37.5c-3.3 9.8-1.6 20.5 4.4 28.8s15.7 13.3 26 13.3H544c17.7 0 32-14.3 32-32s-14.3-32-32-32H460.4l18-53.9c3.8-11.3 .9-23.8-7.4-32.4s-20.7-11.8-32.2-8.4L316.4 198.1c2.4-20.7 3.6-41.4 3.6-62.3V128c0-53-43-96-96-96s-96 43-96 96v32c0 17.7 14.3 32 32 32s32-14.3 32-32V128zm-9.2 177l49-14.7c-10.4 33.8-24.5 66.4-42.1 97.2l-13.9 24.3c-1.5 2.6-4.3 4.3-7.4 4.3c-4.7 0-8.5-3.8-8.5-8.5V335.6c0-14.1 9.3-26.6 22.8-30.7zM24 368c-13.3 0-24 10.7-24 24s10.7 24 24 24H64.3c-.2-2.8-.3-5.6-.3-8.5V368H24zm592 48c13.3 0 24-10.7 24-24s-10.7-24-24-24H305.9c-6.7 16.3-14.2 32.3-22.3 48H616z"/></svg>
+               </div>
+               <br>
+           </div>
+
+           <div class="input-box">
+               <label for="reservation_date">Reservation Date (mm/dd/yyyy):</label>
+               <div class="input-wrapper">
+                   <input type="text" name="reservation_date" id="reservation_date" required placeholder="Date">
+                   <!--<i class="fas fa-calendar-days"></i>-->
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/></svg>
+               </div>
+               <br>
+           </div>
+
+           <div class="input-box">
+               <label for="reservation_details">Reservation Details (What do you want to use?):</label>
+               <div class="input-wrapper">
+                   <!--<input type="text" name="reservation_details" id="reservation_details" required placeholder="Details">-->
+                   <select name="reservation_details" id="reservation_details" required multiple>
+                        <option value="buttons">Buttons</option>
+                        <option value="color_pencils">Colored Pencils</option>
+                       <option value="q_tips">Cotton Swabs</option>
+                        <option value="dry_erase_markers">Dry Erase Makers</option>
+                        <option value="fishing_line">Fishing Line</option>
+                        <option value="glue">Glue</option>
+                        <option value="needles">Needles</option>
+                        <option value="paintbrushes">Paint Brushes</option>
+                        <option value="paper">Paper</option>
+                        <option value="paracord">Paracord</option>
+                        <option value="pens">Pens</option>
+                        <option value="pipe_cleaners">Pipe Cleaners</option>
+                        <option value="pop_sticks">Popsicle Sticks</option>
+                        <option value="ribbon">Ribbon</option>
+                        <option value="rubber_bands">Rubber Bands</option>
+                        <option value="scissors">Scissors</option>
+                        <option value="straws">Straws</option>
+                        <option value="styrofoam_balls">Styrofoam Balls</option>
+                        <option value="tape">Tape</option>
+                        <option value="thread">Thread</option>
+                        <option value="tissue_paper">Tissue Paper</option>
+                        <option value="velcro">Velcro</option>
+                        <option value="wood_beads">Wood Beads</option>
+                        <option value="yarn">Yarn</option>
+                   </select>
+                   <!--<i class="fas fa-circle-info"></i>-->
+                   <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>-->
+                   <br />
+               </div>
+               <br>
+           </div>
+           <input id="submit" class="submit" type="submit" value="Submit">
+       </div>
+   </form>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
